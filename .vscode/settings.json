@@ -1,9 +1,13 @@
 {
     "editor.formatOnSave": true,
+    "editor.wordWrap": "on",
     "editor.codeActionsOnSave": {
         "source.fixAll.ts": "always"
     },
     "[typescript]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[json]": {
         "editor.defaultFormatter": "biomejs.biome"
     }
 }
