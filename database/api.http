@@ -1,0 +1,6 @@
+GET http://localhost:3000/miduapi/2
+
+###
+POST http://localhost:3000/miduapi/
+
+{"id": "9", "autor": "Miguel Angel Durán", "frase": "La mejor forma de predecir el futuro es crearlo"}
