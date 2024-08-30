@@ -1,19 +1,22 @@
 {
-	"name": "server-nodejs",
-	"module": "index.ts",
+	"name": "demo",
 	"type": "module",
-	"devDependencies": {
-		"@biomejs/biome": "1.8.3",
-		"@types/bun": "latest",
-		"@types/express": "^4.17.21"
-	},
+	"version": "0.0.1",
 	"scripts": {
-		"dev": "bun run --watch index.ts"
-	},
-	"peerDependencies": {
-		"typescript": "^5.0.0"
+		"dev": "astro dev",
+		"dev:server": "bun run --watch server/index.ts",
+		"start": "astro dev",
+		"build": "astro check && astro build",
+		"preview": "astro preview",
+		"astro": "astro"
 	},
 	"dependencies": {
-		"express": "^4.19.2"
+		"@astrojs/check": "0.9.3",
+		"@astrojs/tailwind": "5.1.0",
+		"@types/express": "4.17.21",
+		"astro": "4.14.5",
+		"express": "4.19.2",
+		"tailwindcss": "3.4.10",
+		"typescript": "5.5.4"
 	}
 }
