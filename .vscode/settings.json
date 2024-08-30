@@ -11,6 +11,9 @@
         "editor.defaultFormatter": "biomejs.biome",
         
     },
+    "[astro]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    },
     "[http]": {
      "editor.defaultFormatter": "biomejs.biome" 
     }
