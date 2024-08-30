@@ -1,6 +1,10 @@
-GET http://localhost:3000/miduapi/2
+GET http://localhost:3000/
+
+###
+GET http://localhost:3000/miduapi/7
 
 ###
 POST http://localhost:3000/miduapi/
+Content-Type: application/json
 
-{"id": "9", "autor": "Miguel Angel Durán", "frase": "La mejor forma de predecir el futuro es crearlo"}
+{"autor": "Angel Duran", "frase": 88}
