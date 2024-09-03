@@ -2,62 +2,52 @@
 import midudev from "../assets/midudev.jpg";
 ---
 
-<main class="w-full h-full text-white">
-  <h1 class="text-4xl mt-10 px-12 font-bold">miduApi ...</h1>
-
+<main class="w-full flex flex-col items-center justify-center">
   <section class="flex w-full h-full items-center py-5 px-14 flex-col gap-5">
-  <div class="w-full p-5 flex items-center justify-center">
-    <img id="img" class="w-52 h-52 rounded-full" src={midudev.src} alt="midudev-logo">
-  </div>
-    <div class="w-full h-full flex items-center justify-center 
-    [&>div.btn]:w-8 [&>div.btn]:h-8 [&>div.btn]:flex [&>div.btn]:items-center [&>div.btn]:justify-center [&>div.btn]:opacity-50 [&>div.btn]:cursor-pointer hover:[&>div.btn]:scale-110 hover:[&>div.btn]:opacity-100
-    ">
-      <div class="btn" id="btnLeft" tabindex="0"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="100%" width="100%"><path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zm116-292H256v-70.9c0-10.7-13-16.1-20.5-8.5L121.2 247.5c-4.7 4.7-4.7 12.2 0 16.9l114.3 114.9c7.6 7.6 20.5 2.2 20.5-8.5V300h116c6.6 0 12-5.4 12-12v-64c0-6.6-5.4-12-12-12z"></path></svg></div>
-    <div class="w-full h-full flex flex-col items-center justify-center">
-      <p class="text-2xl font-bold" id="frase"></p>
-      <p id="autor"></p>
+    <div class="w-full p-5 flex items-center justify-center">
+      <img
+        id="img"
+        class="w-52 h-52 rounded-full"
+        src={midudev.src}
+        alt="midudev-logo"
+      />
     </div>
-    <div class="btn" id="btnRight" tabindex="0"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="100%" width="100%"><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zM140 300h116v70.9c0 10.7 13 16.1 20.5 8.5l114.3-114.9c4.7-4.7 4.7-12.2 0-16.9l-114.3-115c-7.6-7.6-20.5-2.2-20.5 8.5V212H140c-6.6 0-12 5.4-12 12v64c0 6.6 5.4 12 12 12z"></path></svg></div>
+    <div
+      class="w-full h-full flex items-center justify-center
+    [&>div.btn]:w-8 [&>div.btn]:h-8 [&>div.btn]:flex [&>div.btn]:items-center [&>div.btn]:justify-center [&>div.btn]:opacity-50 [&>div.btn]:cursor-pointer hover:[&>div.btn]:scale-110 hover:[&>div.btn]:opacity-100"
+    >
+      <div class="btn" id="btnLeft" tabindex="0">
+        <svg
+          stroke="currentColor"
+          fill="currentColor"
+          stroke-width="0"
+          viewBox="0 0 512 512"
+          height="100%"
+          width="100%"
+          ><path
+            d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zm116-292H256v-70.9c0-10.7-13-16.1-20.5-8.5L121.2 247.5c-4.7 4.7-4.7 12.2 0 16.9l114.3 114.9c7.6 7.6 20.5 2.2 20.5-8.5V300h116c6.6 0 12-5.4 12-12v-64c0-6.6-5.4-12-12-12z"
+          ></path></svg
+        >
+      </div>
+      <div class="w-full h-full flex flex-col items-center justify-center">
+        <p class="text-2xl font-bold" id="frase"></p>
+        <p id="autor"></p>
+      </div>
+      <div class="btn" id="btnRight" tabindex="0">
+        <svg
+          stroke="currentColor"
+          fill="currentColor"
+          stroke-width="0"
+          viewBox="0 0 512 512"
+          height="100%"
+          width="100%"
+          ><path
+            d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zM140 300h116v70.9c0 10.7 13 16.1 20.5 8.5l114.3-114.9c4.7-4.7 4.7-12.2 0-16.9l-114.3-115c-7.6-7.6-20.5-2.2-20.5 8.5V212H140c-6.6 0-12 5.4-12 12v64c0 6.6 5.4 12 12 12z"
+          ></path></svg
+        >
+      </div>
     </div>
   </section>
 </main>
 
-<script>
-  import apiFetch from "../utils/apiFetch";
-  interface ApiData {
-    id: number;
-    autor: string;
-    frase: string;
-    imagen?: string;
-  }
-  const data: ApiData[] = await apiFetch();
-// buttons events
-  const btnLeft = document.getElementById("btnLeft");
-  const btnRight = document.getElementById("btnRight");
-  
-  const frase = document.getElementById("frase");
-  const autor = document.getElementById("autor");
-  const img = document.getElementById("img");
-
-  let index = 0;
-
-  if (frase) frase.innerHTML = data[index].frase;
-  if (autor) autor.innerHTML = data[index].autor;
-  if(img && data[index].imagen) img.setAttribute("src",  data[index].imagen || "" );
-
-  if (btnLeft)
-    btnLeft.addEventListener("click", () => {
-      index--;
-      if (index <= 0) index = data.length - 1;
-      if (frase) frase.innerHTML = data[index].frase;
-      if (autor) autor.innerHTML = data[index].autor;
-    });
-
-  if (btnRight)
-    btnRight.addEventListener("click", () => {
-      index++;
-      if (index === data.length) index = 0;
-      if (frase) frase.innerHTML = data[index].frase;
-      if (autor) autor.innerHTML = data[index].autor;
-    });
-</script>
+<script src="../utils/carousel"></script>
