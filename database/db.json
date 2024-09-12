@@ -1,6 +1,6 @@
 [
   {
-    "id": 90,
+    "id": 1,
     "autor": "Miguel Ángel Durán García",
     "frase": "La va a liar parda",
     "image": ""
@@ -27,6 +27,108 @@
     "id": 5,
     "autor": "Miguel Ángel Durán García",
     "frase": "ReactJs es lo mejor",
+    "image": ""
+  },
+  {
+    "id": 6,
+    "autor": "Miguel Ángel Durán García",
+    "frase": "La madre que os pario",
+    "image": ""
+  },
+  {
+    "id": 7,
+    "autor": "Miguel Ángel Durán García",
+    "frase": "La madre que me trajo",
+    "image": ""
+  },
+
+  {
+    "id": 8,
+    "autor": "Miguel Ángel Durán García",
+    "frase": "Quedo para lamerlo",
+    "image": ""
+  },
+  {
+    "id": 9,
+    "autor": "Miguel Ángel Durán García",
+    "frase": "Hostia puta",
+    "image": ""
+  },
+
+  {
+    "id": 10,
+    "autor": "Miguel Ángel Durán García",
+    "frase": "Me cago en la leche",
+    "image": ""
+  },
+
+  {
+    "id": 11,
+    "autor": "Miguel Ángel Durán García",
+    "frase": "Coño",
+    "image": ""
+  },
+
+  {
+    "id": 12,
+    "autor": "Miguel Ángel Durán García",
+    "frase": "Que cabrón",
+    "image": ""
+  },
+
+  {
+    "id": 13,
+    "autor": "Miguel Ángel Durán García",
+    "frase": "Que gilipollas",
+    "image": ""
+  },
+
+  {
+    "id": 14,
+    "autor": "Miguel Ángel Durán García",
+    "frase": "Vale vale",
+    "image": ""
+  },
+
+  {
+    "id": 15,
+    "autor": "Miguel Ángel Durán García",
+    "frase": "Venga que no pasa nada",
+    "image": ""
+  },
+
+  {
+    "id": 16,
+    "autor": "Miguel Ángel Durán García",
+    "frase": "Que Majo",
+    "image": ""
+  },
+
+  {
+    "id": 17,
+    "autor": "Miguel Ángel Durán García",
+    "frase": "Venga que mola",
+    "image": ""
+  },
+
+  {
+    "id": 18,
+    "autor": "Miguel Ángel Durán García",
+    "frase": "Que chulo",
+    "image": ""
+  },
+
+  {
+    "id": 19,
+    "autor": "Miguel Ángel Durán García",
+    "frase": "Joder tio",
+    "image": ""
+  },
+
+  {
+    "id": 20,
+    "autor": "Miguel Ángel Durán García",
+    "frase": "Se a cabreao",
     "image": ""
   }
 ]
