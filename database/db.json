@@ -15,7 +15,7 @@
     "id": 3,
     "autor": "Miguel Ángel Durán García",
     "frase": "Te quedaras tarumba",
-    "image": "Ojo cuidado"
+    "image": ""
   },
   {
     "id": 4,
@@ -129,6 +129,13 @@
     "id": 20,
     "autor": "Miguel Ángel Durán García",
     "frase": "Se a cabreao",
+    "image": ""
+  },
+
+  {
+    "id": 21,
+    "autor": "Miguel Ángel Durán García",
+    "frase": "Ojo cuidado",
     "image": ""
   }
 ]
